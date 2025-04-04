@@ -1,0 +1,29 @@
+<h1>
+    Inside ng FOR Directive
+</h1>
+
+<h1>Student Name</h1>
+
+<h3>{{Student[0]}}</h3>
+<h3>{{Student[1]}}</h3>
+<h3>{{Student[2]}}</h3>
+<h3>{{Student[3]}}</h3>
+<h3>{{Student[4]}}</h3>
+
+<h1>Student Name</h1>
+<div *ngFor="let values of Student">
+    <h3>
+        {{values}}
+    </h3>
+
+</div>
+
+<h1>Student Name</h1>
+<div *ngFor="let values of Student; index as i">
+    <h3>
+        {{i}} : {{values}}
+    </h3>
+
+</div>
+
+<!-- * oprator stand it is inbuild-->
